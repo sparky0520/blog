@@ -20,7 +20,7 @@ const Home = () => {
 
     return (
         <>
-            <h1 className='font-bold mx-auto'>Home Page</h1>
+            <h1 className='font-bold text-center'>Home Page</h1>
             <div>
                 {blogs.map((blog, index) => (
                     <div key={blog._id} className="my-3 border-2">
