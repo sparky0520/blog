@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -25,7 +26,7 @@ const Home = () => {
             <div>
                 {blogs.map((blog, index) => (
                     <div key={blog._id} className="my-3 border-2">
-                        <h1 className='text-lg font-semibold text-center my-4'>{blog.title}</h1>
+                        <h1 className='text-lg font-semibold text-center my-4'>{blog.title} <Link to={'/delete'} className="float-right mr-4 text-sm text-red-600">del</Link></h1>
                         <div class="flex">
                             <div class="float-left mx-2 mb-4">
                                 <img src={blog.imageURL} alt="Blog Image" class=" max-h-64 max-w-64" />
