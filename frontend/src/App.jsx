@@ -18,8 +18,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/add" element={<Add />} />
-          <Route path="/delete" element={<Delete />} />
-          <Route path="/edit" element={<Edit />} />
+          <Route path="/delete/:id" element={<Delete />} />
+          <Route path="/edit/:id" element={<Edit />} />
         </Routes>
       </BrowserRouter>
 
