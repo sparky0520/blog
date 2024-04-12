@@ -20,14 +20,20 @@ const Home = () => {
 
     return (
         <>
-            <h1 className='font-bold text-center'>Home Page</h1>
+            <h1 className='text-4xl my-10 font-bold text-center'>Home Page</h1>
             <div>
                 {blogs.map((blog, index) => (
                     <div key={blog._id} className="my-3 border-2">
-                        <h1>{blog.title}</h1>
-                        <div className='flex gap-3'>
-                            <img src={blog.imageURL} />
-                            <p>{blog.author} <br /> {blog.content}</p>
+                        <h1 className='text-lg font-semibold text-center my-4'>{blog.title}</h1>
+                        <div class="flex">
+                            <div class="float-left mx-2 mb-4">
+                                <img src={blog.imageURL} alt="Blog Image" class=" max-h-64 max-w-64" />
+                            </div>
+                            <div>
+                                <p>
+                                    {blog.content}
+                                </p>
+                            </div>
                         </div>
                     </div>
                 ))}
