@@ -14,6 +14,7 @@ const Home = () => {
             })
             .catch(err => {
                 console.log("Error Fetching all Blogs.")
+                alert("Error fetching all blogs. Check Console.")
             })
     }, [])
     // Empty dependency array ensures that effect runs only once after mounting
@@ -31,7 +32,8 @@ const Home = () => {
                             </div>
                             <div>
                                 <p>
-                                    {blog.content}
+                                    {blog.content}<br></br>
+                                    <span className='float-right mr-5 mb-1 text-gray-600'>-{blog.author}</span>
                                 </p>
                             </div>
                         </div>
