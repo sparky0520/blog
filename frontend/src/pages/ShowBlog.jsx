@@ -10,7 +10,7 @@ const ShowBlog = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:5555/blogs/${id}`)
+            .get(`https://blog-4ctn.onrender.com/blogs/${id}`)
             .then(res => {
                 setTitle(res.data.title)
                 setAuthor(res.data.author)

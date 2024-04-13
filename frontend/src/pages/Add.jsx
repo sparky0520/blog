@@ -18,7 +18,7 @@ const Add = () => {
       content
     }
     axios
-      .post('http://localhost:5555/blogs', blog)
+      .post('https://blog-4ctn.onrender.com/blogs', blog)
       .then(() => {
         console.log("Blog Posted Successfully")
         navigate('/')

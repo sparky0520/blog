@@ -7,7 +7,7 @@ const Delete = () => {
 
   function handleSubmit() {
     axios 
-      .delete(`http://localhost:5555/blogs/${id}`)
+      .delete(`https://blog-4ctn.onrender.com/blogs/${id}`)
       .then(() => {
         console.log("Blog Deleted Successfully")
         navigate('/')

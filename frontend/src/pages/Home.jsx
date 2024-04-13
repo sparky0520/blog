@@ -8,7 +8,7 @@ const Home = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5555/blogs/")
+            .get("https://blog-4ctn.onrender.com/blogs/")
             .then(res => {
                 console.log('Data fetched Successfully')
                 setBlogs(res.data.data)

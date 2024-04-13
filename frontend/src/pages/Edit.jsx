@@ -15,7 +15,7 @@ const Edit = () => {
 
   useEffect(()=> {
     axios
-      .get(`http://localhost:5555/blogs/${id}`)
+      .get(`https://blog-4ctn.onrender.com/blogs/${id}`)
       .then(res => {
         setTitle(res.data.title)
         setAuthor(res.data.author)
@@ -36,7 +36,7 @@ const Edit = () => {
       content
     }
     axios
-      .put(`http://localhost:5555/blogs/${id}`, blog)
+      .put(`https://blog-4ctn.onrender.com/blogs/${id}`, blog)
       .then(() => {
         console.log("Blog Edited Successfully")
         navigate('/')
