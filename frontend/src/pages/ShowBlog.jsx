@@ -29,7 +29,7 @@ const ShowBlog = () => {
             <div className='mt-20 font-bold text-3xl text-center'>{title}</div>
             <div className='text-right mr-5 mb-1 text-gray-600 mb-20'>-{author}</div>
             <div className='flex justify-center'>
-                <img src={imageURL} alt="Blog Image" className='w-full h-auto lg:w-2/3 xl:w-1/2 rounded-lg md:mx-1 lg:mx-0' />
+                <img src={imageURL} alt="Blog Image" className='w-full h-auto md:mx-1 lg:w-2/3  lg:mx-0 xl:w-1/2 rounded-lg ' />
             </div>
             <p className='my-10 text-lg text-gray-800 md:mx-1 lg:mx-0'>{content}</p>
         </>
