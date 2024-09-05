@@ -2,7 +2,6 @@ import express from "express";
 import cors from 'cors'
 import mongoose from "mongoose";
 import blogRoutes from './routes/blogRoutes.js'
-import { PORT, mongoDBURL } from './config.js'
 
 const app = express()
 
@@ -19,10 +18,10 @@ app.get('/',(req,res) => {
 })
 
 mongoose
-    .connect(mongoDBURL)
+    .connect(process.env.mongoDBURL)
     .then(() => {
         console.log("Database Connected !")
-        app.listen(PORT, ()=> {
+        app.listen(process.env.PORT, ()=> {
             console.log(`http://localhost:${PORT}`)
         })
     })
