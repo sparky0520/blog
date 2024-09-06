@@ -7,7 +7,7 @@ const Delete = () => {
 
   function handleSubmit() {
     axios 
-      .delete(`https://blog-4ctn.onrender.com/blogs/${id}`)
+      .delete(`${import.meta.env.VITE_backendURL+id}`)
       .then(() => {
         console.log("Blog Deleted Successfully")
         navigate('/')

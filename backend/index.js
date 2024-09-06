@@ -10,7 +10,7 @@ app.use(express.json()) // JSON parser middleware
 // Allow users of all configs to access server
 app.use(cors())
 
-// Use /books route prefix
+// Use /blogs route prefix
 app.use('/blogs',blogRoutes)
 
 app.get('/',(req,res) => {

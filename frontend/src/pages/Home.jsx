@@ -8,7 +8,7 @@ const Home = () => {
 
     useEffect(() => {
         axios
-            .get("https://blog-4ctn.onrender.com/blogs/")
+            .get(import.meta.env.VITE_backendURL)
             .then(res => {
                 console.log('Data fetched Successfully')
                 setBlogs(res.data.data)

@@ -15,7 +15,7 @@ const Edit = () => {
 
   useEffect(()=> {
     axios
-      .get(`https://blog-4ctn.onrender.com/blogs/${id}`)
+      .get(`${import.meta.env.VITE_backendURL +id}`)
       .then(res => {
         setTitle(res.data.title)
         setAuthor(res.data.author)
@@ -36,7 +36,7 @@ const Edit = () => {
       content
     }
     axios
-      .put(`https://blog-4ctn.onrender.com/blogs/${id}`, blog)
+      .put(`${import.meta.env.VITE_backendURL+id}`, blog)
       .then(() => {
         console.log("Blog Edited Successfully")
         navigate('/')
