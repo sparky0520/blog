@@ -19,8 +19,9 @@
 3. Storing all urls in .env file for increased security.
 
 ## Steps to run this project
-1. Clone this repo in your computer using `git clone https://github.com/sparky0520/blog.git`.
-2. In the terminal type `cd backend` and then `npm i` to install all dependencies/node modules. Do the same for the frontend folder.
-3. In the `.env` files in `backend` and `frontend` folders, replace the values for the respective keys.
-4. While in the backend folder type `node index.js` to run the server. In the frontend type  `npm run dev` to start the react development server.
-5. View your webpage on `http://localhost:5173` 
+1. Install the latest version of Node.js from `nodejs.org`.
+2. Clone this repo in your computer using `git clone https://github.com/sparky0520/blog.git`.
+3. In the terminal type `cd backend` and then `npm i` to install all dependencies/node modules. Do the same for the frontend folder.
+4. In the `.env` files in `backend` and `frontend` folders, replace the values for the respective keys.
+5. While in the backend folder type `node index.js` to run the server. In the frontend type  `npm run dev` to start the react development server.
+6. View your webpage on `http://localhost:5173` 
